@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMA STORE | Premium Local Store in Imphal</title>
+    <meta name="description" content="IMA STORE - Your premium local store in Khurai, Imphal. Home delivery and COD available.">
+    
+    <!-- Google Fonts: Syne for Headings, Inter for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS (No build required) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#D90429',
+                            black: '#1A1A1A',
+                            offwhite: '#F8F9FA',
+                            gray: '#6C757D'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Syne', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #F8F9FA; color: #1A1A1A; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Syne', sans-serif; }
+        .fade-in { animation: fadeIn 1s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-brand-offwhite/95 backdrop-blur-md border-b border-gray-200" id="navbar">
+        <div class="container mx-auto px-6 max-w-7xl">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex-shrink-0 flex items-center">
+                    <img src="1000401610.png" alt="IMA STORE Logo" class="h-12 w-auto object-contain rounded-sm" onerror="this.outerHTML='<span class=\'text-2xl font-heading font-black tracking-tighter\'>IMA STORE<span class=\'text-brand-red\'>.</span></span>'" />
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-10">
+                    <a href="#hero" class="text-brand-black font-medium hover:text-brand-red transition-colors">Home</a>
+                    <a href="#services" class="text-brand-black font-medium hover:text-brand-red transition-colors">Explore</a>
+                    <a href="#why-ima" class="text-brand-black font-medium hover:text-brand-red transition-colors">Why IMA</a>
+                    <a href="#contact" class="text-brand-black font-medium hover:text-brand-red transition-colors">Contact</a>
+                </nav>
+
+                <!-- Desktop CTA -->
+                <div class="hidden md:block">
+                    <a href="https://wa.me/916009559821" target="_blank" rel="noopener noreferrer" 
+                       class="inline-flex items-center gap-2 bg-brand-black text-white px-6 py-2.5 font-bold hover:bg-brand-red transition-colors">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                        WhatsApp Us
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-brand-black focus:outline-none" id="mobile-menu-btn">
+                    <i data-lucide="menu" class="w-8 h-8"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-brand-offwhite border-t border-gray-200 absolute w-full shadow-xl" id="mobile-menu">
+            <div class="px-6 pt-4 pb-6 space-y-4">
+                <a href="#hero" class="mobile-link block text-xl font-medium text-brand-black">Home</a>
+                <a href="#services" class="mobile-link block text-xl font-medium text-brand-black">Explore</a>
+                <a href="#why-ima" class="mobile-link block text-xl font-medium text-brand-black">Why IMA</a>
+                <a href="#contact" class="mobile-link block text-xl font-medium text-brand-black">Contact</a>
+                <a href="https://wa.me/916009559821" target="_blank" rel="noopener noreferrer" 
+                   class="inline-flex items-center gap-2 bg-brand-black text-white px-6 py-3 mt-4 font-bold w-full justify-center hover:bg-brand-red">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="pt-32 pb-20 md:pt-48 md:pb-32 px-6 fade-in">
+            <div class="container mx-auto max-w-6xl">
+                <div class="flex flex-wrap gap-3 mb-8">
+                    <span class="inline-block px-4 py-1 border border-brand-black rounded-full text-sm font-semibold uppercase tracking-wider">Home Delivery</span>
+                    <span class="inline-block px-4 py-1 border border-brand-red text-brand-red rounded-full text-sm font-semibold uppercase tracking-wider">Cash on Delivery</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-8xl font-heading font-extrabold leading-tight mb-8">
+                    Elevating local<br>
+                    <span class="text-brand-red">culture & style.</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-brand-gray mb-12 max-w-2xl leading-relaxed">
+                    Your premium destination in Khurai, Imphal. Discover quality products with the convenience of local trust and instant delivery.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/916009559821" target="_blank" rel="noopener noreferrer" 
+                       class="inline-flex items-center justify-center gap-3 bg-brand-black text-white px-8 py-4 font-bold text-lg hover:bg-brand-red transition-all">
+                        <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                        Order on WhatsApp
+                    </a>
+                    <a href="#contact" 
+                       class="inline-flex items-center justify-center gap-3 border-2 border-brand-black text-brand-black px-8 py-4 font-bold text-lg hover:bg-brand-black hover:text-white transition-all">
+                        View Store Details
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services / Explore Section -->
+        <section id="services" class="py-24 bg-white px-6">
+            <div class="container mx-auto max-w-6xl">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 bg-brand-offwhite flex items-center justify-center rounded-full mb-6">
+                            <i data-lucide="smartphone" class="w-6 h-6 text-brand-red"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold font-heading">Easy Discovery</h3>
+                        <p class="text-brand-gray leading-relaxed">Browse our latest collection through our Instagram and order instantly via WhatsApp. Shopping made seamless.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 bg-brand-offwhite flex items-center justify-center rounded-full mb-6">
+                            <i data-lucide="truck" class="w-6 h-6 text-brand-red"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold font-heading">Home Delivery</h3>
+                        <p class="text-brand-gray leading-relaxed">Fast and reliable home delivery across Imphal. Get your favorite items delivered right to your doorstep.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 bg-brand-offwhite flex items-center justify-center rounded-full mb-6">
+                            <i data-lucide="banknote" class="w-6 h-6 text-brand-red"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold font-heading">Cash on Delivery</h3>
+                        <p class="text-brand-gray leading-relaxed">Shop with confidence. We offer COD options so you can pay when your product safely arrives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram Banner Section (Mobile Fixed) -->
+        <section id="instagram" class="py-20 bg-brand-red text-white">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="max-w-3xl">
+                    <h2 class="text-4xl md:text-6xl font-heading font-bold mb-6">Join our Community</h2>
+                    <p class="text-xl md:text-2xl mb-10 opacity-90">Stay updated with the latest drops and local culture.</p>
+                    
+                    <!-- Fixed: flex-col on mobile, flex-row on desktop -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10 border-t border-white/20 pt-8">
+                        <div class="flex items-center gap-6">
+                            <div>
+                                <p class="text-3xl md:text-4xl font-bold">38.7K</p>
+                                <p class="text-xs md:text-sm tracking-widest opacity-80 uppercase mt-1">Followers</p>
+                            </div>
+                            <div class="w-px h-12 bg-white/30"></div>
+                            <div>
+                                <p class="text-3xl md:text-4xl font-bold">821</p>
+                                <p class="text-xs md:text-sm tracking-widest opacity-80 uppercase mt-1">Posts</p>
+                            </div>
+                        </div>
+                        
+                        <a href="https://www.instagram.com/ima_store_khurai/" target="_blank" rel="noopener noreferrer" 
+                           class="mt-4 md:mt-0 w-full md:w-auto inline-flex items-center justify-center gap-3 bg-white text-brand-black px-8 py-4 font-bold tracking-wide hover:bg-gray-100 transition-colors">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                            @ima_store_khurai
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (Mobile Heading Fixed) -->
+        <section id="contact" class="py-24 bg-brand-offwhite">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <!-- Fixed: Reduced mobile heading size -->
+                <h2 class="text-4xl md:text-7xl font-heading font-bold mb-16 max-w-4xl">Visit or<br>Reach Out</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Location</h3>
+                        <p class="text-lg md:text-xl text-brand-gray mb-8 leading-relaxed">
+                            Khurai Sajor Leikai<br>
+                            Ukhrul Road<br>
+                            Imphal, Manipur 795010
+                        </p>
+                        <a href="https://maps.google.com/?q=Khurai+Sajor+Leikai+Ukhrul+Road,+Imphal,+Manipur+795010" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center gap-2 pb-1 border-b-2 border-brand-black font-bold hover:text-brand-red hover:border-brand-red transition-colors">
+                            <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            Get Directions
+                        </a>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Contact & Hours</h3>
+                        <div class="space-y-6 text-lg md:text-xl text-brand-gray mb-10">
+                            <p class="flex items-center gap-4">
+                                <i data-lucide="phone" class="w-6 h-6 text-brand-black"></i>
+                                +91 60095 59821
+                            </p>
+                            <p class="flex items-center gap-4">
+                                <i data-lucide="clock" class="w-6 h-6 text-brand-black"></i>
+                                Open Monday to Sunday
+                            </p>
+                        </div>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="https://wa.me/916009559821" target="_blank" rel="noopener noreferrer" 
+                               class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-8 py-4 font-bold hover:bg-[#20bd5a] transition-colors">
+                                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                                WhatsApp Us
+                            </a>
+                            <a href="tel:+916009559821" 
+                               class="inline-flex items-center justify-center gap-2 bg-brand-black text-white px-8 py-4 font-bold hover:bg-gray-800 transition-colors">
+                                <i data-lucide="phone-call" class="w-5 h-5"></i>
+                                Call Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-black text-white py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6 max-w-7xl flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="font-heading font-bold text-2xl tracking-tighter">
+                IMA STORE<span class="text-brand-red">.</span>
+            </div>
+            <p class="text-gray-400 text-sm">© 2026 IMA STORE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
